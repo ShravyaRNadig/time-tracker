@@ -1,0 +1,36 @@
+.usa-nav{
+   float: right;
+ }
+ 
+ .usa-nav-container img {
+     max-width: 125px;
+ }
+
+ .usa-nav-container {
+     max-width: 100%;
+ }
+
+ .usa-button{
+    float: right;
+ }
+
+ .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+  }
+
+  /* .usa-sidenav{
+    padding-left: 2px;
+  } */
+
+  .usa-table th[data-sortable] {
+    padding-right: 2.5rem;
+    position: relative;
+    width: 7%;
+}
+
+.outlines{
+  outline-color: gray;
+}
