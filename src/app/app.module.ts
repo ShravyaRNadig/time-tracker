@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { CommanComponent } from './comman/comman.component';
 import { LoginComponent } from './login/login.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CommanComponent,
     LoginComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProfileComponent,
+    ProfileEditComponent
   ],
   imports: [
     BrowserModule,
