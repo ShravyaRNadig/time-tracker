@@ -1,0 +1,88 @@
+<ul class="usa-card-group">
+    <li class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h2 class="usa-card__heading">Edit Project Info
+                    <p style="float: right;"><button type="button" class="usa-button" [routerLink]="['/project']"
+                            routerLinkActive="router-link-active" style="float: right;">Update</button></p>
+                </h2>
+            </div>
+            <div class="usa-card__body">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col  margin-bottom-4 tablet:margin-bottom-0">
+                        <h3>Client & Project Info</h3>
+                        <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col  margin-bottom-4 tablet:margin-bottom-0">
+                                <input class="usa-input" id="input-type-text" name="input-type-text" placeholder="Client A"/>
+                            </div>
+                            <div class="tablet:grid-col  margin-bottom-4 tablet:margin-bottom-0">
+                                <input class="usa-input" id="input-type-text" name="input-type-text" placeholder="Time tracker"/>
+                            </div>
+                        </div><br>
+                        <label class="usa-label" for="project lead">Project Lead(s)</label>
+                        <button class="usa-button usa-button--accent-cool"
+                            style="background-color: rgb(192, 246, 192); color: rgb(43, 246, 43);">John Doe <i
+                                class="fa fa-close" style="color: grey;"></i></button>
+                        <div class="usa-combo-box">
+                            <select class="usa-select" id="project lead" name="project lead">
+                                <option value>Select from list</option>
+                                <option value="Shiv Kumar">Shiv Kumar</option>
+                                <option value="Deepak">Deepak</option>
+                                <option value="Smrith">Smrith</option>
+                            </select>
+                        </div><br>
+                        <label class="usa-label" for="team member">Team Member(s)</label>
+                        <button class="usa-button usa-button--accent-cool"
+                            style="background-color: rgb(176, 177, 176); color: rgb(121, 123, 121);">Lorem <i
+                                class="fa fa-close" style="color: grey;"></i></button>
+                        <button class="usa-button usa-button--accent-cool"
+                            style="background-color: rgb(176, 177, 176); color: rgb(121, 123, 121);">Ipsum <i
+                                class="fa fa-close" style="color: grey;"></i></button>
+                        <div class="usa-combo-box">
+                            <select class="usa-select" id="team member" name="team member">
+                                <option value>Select from list</option>
+                                <option value="Shiv Kumar">Shiv Kumar</option>
+                                <option value="Deepak">Deepak</option>
+                                <option value="Smrith">Smrith</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col  margin-bottom-4 tablet:margin-bottom-0">
+                        <h3 class="usa-hint" id="appointment-date-hint" style="color: black;">Start Date(mm/dd/yyyy)
+                        </h3>
+                        <div class="usa-form-group">
+                            <!-- <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div> -->
+                            <div class="usa-date-picker">
+                                <input class="usa-input" id="appointment-date" name="appointment-date"
+                                    aria-labelledby="appointment-date-label" aria-describedby="appointment-date-hint" />
+                            </div><br>
+                            <h3 class="usa-hint" id="appointment-date-hint" style="color: black;">End Date(mm/dd/yyyy)
+                            </h3>
+                            <div class="usa-form-group">
+                                <!-- <div class="usa-hint" id="appointment-date-hint">mm/dd/yyyy</div> -->
+                                <div class="usa-date-picker">
+                                    <input class="usa-input" id="appointment-date" name="appointment-date"
+                                        aria-labelledby="appointment-date-label"
+                                        aria-describedby="appointment-date-hint" />
+                                </div><br>
+                                <h3>Technologies Required</h3>
+                                <button class="usa-button usa-button--accent-cool"
+                                    style="background-color: rgb(155, 202, 240); color: rgb(55, 155, 249);">React.JS</button>
+                                <button class="usa-button usa-button--accent-cool"
+                                    style="background-color: rgb(155, 202, 240);color: rgb(55, 155, 249);">Javascript</button>
+                                <br><br>
+                                <button class="usa-button usa-button--accent-cool"
+                                    style="background-color: rgb(155, 202, 240);color: rgb(55, 155, 249);">HTML</button>
+                                <button class="usa-button usa-button--accent-cool"
+                                    style="background-color: rgb(155, 202, 240); color: rgb(55, 155, 249);">MongoDB</button>
+                                <br>
+                                <input class="usa-input" id="input-type-text" name="input-type-text" placeholder="Type technologies and enter"/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

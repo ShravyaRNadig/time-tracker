@@ -1,0 +1,185 @@
+4 July 2022 - 8 July 2022 <i class="fa fa-angle-down" style="font-size: 20px;"></i>
+<ul class="usa-button-group usa-button-group--segmented" style="float: right;">
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/day']"
+            routerLinkActive="router-link-active">
+            Day
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button" [routerLink]="['/week']" routerLinkActive="router-link-active">
+            Week
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/month']"
+            routerLinkActive="router-link-active">
+            Month
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/year']"
+            routerLinkActive="router-link-active">
+            Year
+        </button>
+    </li>
+</ul><br><br><br>
+<i class="fa fa-arrow-left" [routerLink]="['/timesheet']" routerLinkActive="router-link-active"></i>&nbsp;
+<button type="" class="usa-button">Export</button>
+
+<br><br>
+<ul class="usa-card-group">
+    <li class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-8  margin-bottom-4 tablet:margin-bottom-0">
+                        <h2 class="usa-card__heading">Week-Wise Time Sheet</h2>
+                    </div>
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                        <section aria-label="Search component">
+                            <form class="usa-search usa-search--small" role="search">
+                                <label class="usa-sr-only" for="search-field">Search</label>
+                                <input class="usa-input" id="search-field" type="search" name="search" />
+                                <button class="usa-button" type="submit">
+                                    <img src="/assets/img/usa-icons-bg/search--white.png"
+                                        class="usa-search__submit-icon" alt="Search" />
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="usa-card__body">
+                        <div class="usa-table-container--scrollable" tabindex="0">
+                            <table class="usa-table usa-table--borderless">
+                                <thead style="background-color: rgb(184, 217, 250);">
+                                    <tr>
+                                        <th data-sortable scope="col" role="columnheader">Date</th>
+                                        <th data-sortable scope="col" role="columnheader">Project</th>
+                                        <th data-sortable scope="col" role="columnheader">Task</th>
+                                        <th data-sortable scope="col" role="columnheader">Time(in hrs)</th>
+                                        <th data-sortable scope="col" role="columnheader">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>4 July 2022 <i class="fa fa-angle-down" style="font-size: 20px;"></i></td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>9</td>
+                                        <td>
+                                            <button type="button" class="usa-button usa-button--outline" style="color: green;">
+                                                Approved
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 July 2022 <i class="fa fa-angle-down" style="font-size: 20px;"></i></td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>8</td>
+                                        <td>
+                                            <button type="button" class="usa-button usa-button--outline" style="color: red;">
+                                                Pending
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 July 2022 <i class="fa fa-angle-down" style="font-size: 20px;"></i></td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>9</td>
+                                        <td>
+                                            <button type="button" class="usa-button usa-button--outline" style="color: green;">
+                                                Approved
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7 July 2022 <i class="fa fa-angle-down" style="font-size: 20px;"></i></td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>9</td>
+                                        <td>
+                                            <button type="button" class="usa-button usa-button--outline" style="color: green;">
+                                                Approved
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 July 2022 <i class="fa fa-angle-down" style="font-size: 20px;"></i></td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>9</td>
+                                        <td>
+                                            <button type="button" class="usa-button usa-button--outline" style="color: green;">
+                                                Approved
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col-3  margin-bottom-4 tablet:margin-bottom-0">
+                                <ul class="usa-button-group usa-button-group--segmented">
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            Total Days
+                                        </button>
+                                    </li>
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            5
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tablet:grid-col-3  margin-bottom-4 tablet:margin-bottom-0">
+                                <ul class="usa-button-group usa-button-group--segmented">
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            Total Projects
+                                        </button>
+                                    </li>
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            2
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tablet:grid-col-3  margin-bottom-4 tablet:margin-bottom-0">
+                                <ul class="usa-button-group usa-button-group--segmented">
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            Total Tasks
+                                        </button>
+                                    </li>
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            16
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tablet:grid-col-3  margin-bottom-4 tablet:margin-bottom-0">
+                                <ul class="usa-button-group usa-button-group--segmented">
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            Total Time
+                                        </button>
+                                    </li>
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline">
+                                            45:00
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

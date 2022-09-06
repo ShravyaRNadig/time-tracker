@@ -1,0 +1,22 @@
+.usa-nav-container img {
+    max-width: 125px;
+}
+
+.usa-nav-container {
+    max-width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0px;
+    width: 90%;
+    overflow: visible;
+    color: black;
+}

@@ -1,0 +1,232 @@
+Monday, 4 July 2022  <i class="fa fa-angle-down" style="font-size: 20px;"></i>
+<ul class="usa-button-group usa-button-group--segmented" style="float: right;">
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/day']" routerLinkActive="router-link-active" >
+            Day
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/week']" routerLinkActive="router-link-active" >
+            Week
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/month']" routerLinkActive="router-link-active" >
+            Month
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/year']" routerLinkActive="router-link-active" >
+            Year
+        </button>
+    </li>
+</ul><br><br><br>
+<button type="" class="usa-button">Export</button>
+<button type="" class="usa-button" style="float: right;">Send Approval</button>
+<br><br>
+<ul class="usa-card-group">
+    <li class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-6  margin-bottom-4 tablet:margin-bottom-0">
+                <h2 class="usa-card__heading">Day-Wise Time Sheet</h2></div>
+                <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                <section aria-label="Search component">
+                    <form class="usa-search usa-search--small" role="search">
+                        <label class="usa-sr-only" for="search-field">Search</label>
+                        <input class="usa-input" id="search-field" type="search" name="search" />
+                        <button class="usa-button" type="submit">
+                            <img src="/assets/img/usa-icons-bg/search--white.png" class="usa-search__submit-icon"
+                                alt="Search" />
+                        </button>
+                    </form>
+                </section></div>
+                <div class="tablet:grid-col-2  margin-bottom-4 tablet:margin-bottom-0">
+                <button type="button" class="usa-button">
+                    Add Task
+                </button></div>
+                </div>
+            </div>
+            <div class="usa-card__body">
+                <div class="usa-table-container--scrollable" tabindex="0">
+                    <table class="usa-table usa-table--borderless">
+                        <thead style="background-color: rgb(184, 217, 250);">
+                            <tr>
+                                <th data-sortable scope="col" role="columnheader">Project</th>
+                                <th data-sortable scope="col" role="columnheader">Task</th>
+                                <th data-sortable scope="col" role="columnheader">Time</th>
+                                <th data-sortable scope="col" role="columnheader">Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="usa-combo-box">
+                                        <select class="usa-select" id="team member" name="team member">
+                                            <option value>Select Project</option>
+                                            <option value="Shiv Kumar">Shiv Kumar</option>
+                                            <option value="Deepak">Deepak</option>
+                                            <option value="Smrith">Smrith</option>
+                                        </select>
+                                    </div>
+                                </th>
+                                <td><input class="usa-input" id="input-type-text" name="input-type-text"
+                                        placeholder="Enter Task details" /></td>
+                                <td>
+                                    <ul class="usa-button-group usa-button-group--segmented">
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-play"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-square"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-arrow-right"></i>
+                                                <i class="fa fa-arrow-left"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <button type="button" class="usa-button usa-button--outline">
+                                        --
+                                    </button>
+                                </td>
+                                <td>
+                                    <ul class="usa-button-group usa-button-group--segmented">
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-pencil"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <ul class="usa-button-group usa-button-group--segmented">
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                10.30am
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                12.30pm
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-arrow-right"></i>
+                                                <i class="fa fa-arrow-left"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <button type="button" class="usa-button usa-button--outline" style="color: plum;">
+                                        In Progress
+                                    </button>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" class="usa-button usa-button--outline">
+                                        Send
+                                    </button>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" class="usa-button usa-button--outline" style="color:green">
+                                        Approved
+                                    </button>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><button type="button" class="usa-button usa-button--outline" style="color: red;">
+                                        Pending
+                                    </button>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                        <ul class="usa-button-group usa-button-group--segmented">
+                            <li class="usa-button-group__item">
+                                <button type="button" class="usa-button usa-button--outline">
+                                    Total Projects
+                                </button>
+                            </li>
+                            <li class="usa-button-group__item">
+                                <button type="button" class="usa-button usa-button--outline">
+                                    0
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                        <ul class="usa-button-group usa-button-group--segmented">
+                            <li class="usa-button-group__item">
+                                <button type="button" class="usa-button usa-button--outline">
+                                    Total Tasks
+                                </button>
+                            </li>
+                            <li class="usa-button-group__item">
+                                <button type="button" class="usa-button usa-button--outline">
+                                    0
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                        <ul class="usa-button-group usa-button-group--segmented">
+                            <li class="usa-button-group__item">
+                                <button type="button" class="usa-button usa-button--outline">
+                                    Total Time
+                                </button>
+                            </li>
+                            <li class="usa-button-group__item">
+                                <button type="button" class="usa-button usa-button--outline">
+                                    00:00
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

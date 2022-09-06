@@ -1,0 +1,28 @@
+<header class="usa-header usa-header--basic">
+    <div class="usa-nav-container">
+        <div class="usa-navbar">
+            <div class="usa-logo" id="-logo">
+                <i class="fa fa-bars"></i>&nbsp;<img src="/assets/img/usa-icons-bg/baygrape.png">
+            </div>
+        </div>
+        <nav aria-label="Primary navigation" class="usa-nav">
+            <section aria-label="Search component">
+                <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                        <img src="/assets/img/usa-icons-bg/search--white.png" class="usa-search__submit-icon"
+                            alt="Search" />
+                    </button>
+                </form>
+            </section>&nbsp;&nbsp;&nbsp;
+            <ul class="usa-nav__primary usa-accordion" style="padding-left: 10px;" [routerLink]="['/profile']" routerLinkActive="router-link-active" >
+                <a class="nav-link" href="javascript:void(0);" id="navbar" aria-haspopup="true" aria-expanded="false">
+                    <img src="/assets/img/usa-icons-bg/images.jpg" width="50" height="50" style="border-radius:50%"></a>
+                <p style="padding-left: 3px;">John Due<br> Product Manager</p>
+            </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="" class="usa-button" [routerLink]="['/login']" routerLinkActive="router-link-active" >LogOut</button>
+
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,87 @@
+<ul class="usa-card-group">
+    <li class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h2 class="usa-card__heading"><i class="fa fa-arrow-left" [routerLink]="['/project']"
+                    routerLinkActive="router-link-active"></i><br>Remove Team Member</h2>
+                <section aria-label="Search component">
+                    <form class="usa-search usa-search--small" role="search" style="float: right;">
+                        <label class="usa-sr-only" for="search-field">Search</label>
+                        <input class="usa-input" id="search-field" type="search" name="search" />
+                        <button class="usa-button" type="submit">
+                            <img src="/assets/img/usa-icons-bg/search--white.png" class="usa-search__submit-icon"
+                                alt="Search" />
+                        </button>
+                    </form>
+                </section>
+            </div>
+            <div class="usa-card__body">
+                <div class="usa-table-container--scrollable" tabindex="0">
+                    <table class="usa-table usa-table--borderless">
+                        <thead style="background-color: rgb(126, 250, 236);">
+                            <tr>
+                                <th data-sortable scope="col" role="columnheader">Client</th>
+                                <th data-sortable scope="col" role="columnheader">Project</th>
+                                <th data-sortable scope="col" role="columnheader">Start Date</th>
+                                <th data-sortable scope="col" role="columnheader">Total Time</th>
+                                <th data-sortable scope="col" role="columnheader">Project Lead</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Ab Lorem Ippsum </th>
+                                <td>Time tracking</td>
+                                <td>15 June 2020</td>
+                                <td>50 Hrs</td>
+                                <td>Lorem Ipsum</td>
+                                <td><i class="fa fa-trash" style="color: red;"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lorem Ippsum</th>
+                                <td>BayPay</td>
+                                <td>5 June 2022</td>
+                                <td>45 Hrs</td>
+                                <td>Ipsum K</td>
+                                <td><i class="fa fa-trash" style="color: red;"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dummy Lorem Ippsum</th>
+                                <td>Dashboard</td>
+                                <td>10 January 2018</td>
+                                <td>30 Hrs</td>
+                                <td>Lorem Dummy</td>
+                                <td><i class="fa fa-trash" style="color: red;"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dummy Lorem Ippsum</th>
+                                <td>Testing Engine</td>
+                                <td>1 February 2018</td>
+                                <td>28 Hrs</td>
+                                <td>Dummy Text</td>
+                                <td><i class="fa fa-trash" style="color: red;"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Ab Lorem Ippsum </th>
+                                <td>Project tracking</td>
+                                <td>5 June 2022</td>
+                                <td>30 Hrs</td>
+                                <td>Lorem L</td>
+                                <td><i class="fa fa-trash" style="color: red;"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lorem Ippsum</th>
+                                <td>Scrum Book</td>
+                                <td>5 June 2022</td>
+                                <td>60 Hrs</td>
+                                <td>Ipsum V</td>
+                                <td><i class="fa fa-trash" style="color: red;"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

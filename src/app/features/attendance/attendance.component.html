@@ -1,0 +1,209 @@
+Monday, 4 July 2022  <i class="fa fa-angle-down" style="font-size: 20px;"></i>
+<ul class="usa-button-group usa-button-group--segmented" style="float: right;">
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/months']" routerLinkActive="router-link-active" >
+            Month
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button usa-button--outline" [routerLink]="['/years']" routerLinkActive="router-link-active" >
+            Year
+        </button>
+    </li>
+    <li class="usa-button-group__item">
+        <button type="button" class="usa-button" [routerLink]="['/leave']" routerLinkActive="router-link-active" >
+            Leave
+        </button>
+    </li>
+</ul><br><br><br>
+<button type="" class="usa-button">Export</button>
+<br><br>
+<ul class="usa-card-group">
+    <li class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                <h2 class="usa-card__heading">Apply Leave</h2></div>
+                <div class="tablet:grid-col-2  margin-bottom-4 tablet:margin-bottom-0">
+                    <button class="usa-button" style="background-color: rgb(155, 198, 244); color:black;">Total Leaves &nbsp; 24 &nbsp;<i class="fa fa-angle-down" style="font-size: 20px;"></i></button>
+                </div>
+                    <div class="tablet:grid-col-2  margin-bottom-4 tablet:margin-bottom-0">
+                        <button class="usa-button" style="background-color: rgb(155, 198, 244); color:black;">Available &nbsp; 20 &nbsp;<i class="fa fa-angle-down" style="font-size: 20px;"></i></button>
+                    </div>
+                <div class="tablet:grid-col-3  margin-bottom-4 tablet:margin-bottom-0">
+                <section aria-label="Search component">
+                    <form class="usa-search usa-search--small" role="search">
+                        <label class="usa-sr-only" for="search-field">Search</label>
+                        <input class="usa-input" id="search-field" type="search" name="search" />
+                        <button class="usa-button" type="submit">
+                            <img src="/assets/img/usa-icons-bg/search--white.png" class="usa-search__submit-icon"
+                                alt="Search" />
+                        </button>
+                    </form>
+                </section></div>
+                <div class="tablet:grid-col-1  margin-bottom-4 tablet:margin-bottom-0">
+                <button type="button" class="usa-button">
+                    Add
+                </button></div>
+                </div>
+            </div>
+            <div class="usa-card__body">
+                <div class="usa-table-container--scrollable" tabindex="0">
+                    <table class="usa-table usa-table--borderless">
+                        <thead style="background-color: rgb(184, 217, 250);">
+                            <tr>
+                                <th data-sortable scope="col" role="columnheader">Start Date</th>
+                                <th data-sortable scope="col" role="columnheader">End Date</th>
+                                <th data-sortable scope="col" role="columnheader">Type of Leave</th>
+                                <th data-sortable scope="col" role="columnheader">Reason</th>
+                                <th data-sortable scope="col" role="columnheader">Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="usa-form-group">
+                                        <div class="usa-date-picker">
+                                          <input
+                                            class="usa-input"
+                                            id="appointment-date"
+                                            name="appointment-date"
+                                            aria-labelledby="appointment-date-label"
+                                            aria-describedby="appointment-date-hint"
+                                          />
+                                        </div>
+                                      </div>
+                                </th>
+                                <td>
+                                    <div class="usa-form-group">
+                                        <div class="usa-date-picker">
+                                          <input
+                                            class="usa-input"
+                                            id="appointment-date"
+                                            name="appointment-date"
+                                            aria-labelledby="appointment-date-label"
+                                          />
+                                        </div>
+                                      </div>
+                                </td>                                
+                                <td>
+                                    <div class="usa-combo-box">
+                                        <select class="usa-select" id="leave" name="leave">
+                                            <option value>Select type of Leave</option>
+                                            <option value="Shiv Kumar">Casual Leaves</option>
+                                            <option value="Deepak">Sick Leaves</option>
+                                            <option value="Smrith">Others</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td><input class="usa-input" id="input-type-text" name="input-type-text" placeholder="Reason for Leave"/></td>
+                                <td>
+                                    <button type="button" class="usa-button usa-button--outline">
+                                        --
+                                    </button>
+                                </td>
+                                <td>
+                                    <ul class="usa-button-group usa-button-group--segmented">
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-pencil"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2 July 2022</td>
+                                <td>3 July 2022</td>
+                                <td>
+                                    Casual Leave
+                                </td>
+                                <td>Going out of station</td>
+                                <td>
+                                    <button type="button" class="usa-button usa-button--outline" style="color:green">
+                                        Approved
+                                    </button>
+                                </td>
+                                <td>
+                                    <ul class="usa-button-group usa-button-group--segmented">
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline" disabled="disabled">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline" disabled="disabled">
+                                                <i class="fa fa-pencil"></i>
+                                            </button>
+                                        </li>
+                                        <li class="usa-button-group__item">
+                                            <button type="button" class="usa-button usa-button--outline" disabled="disabled">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20 June 2022</td>
+                                <td>20 June 2022</td>
+                                <td>Sick Leave</td>
+                                <td>Severe Headache</td>
+                                <td><button type="button" class="usa-button usa-button--outline" style="color:green">
+                                    Approved
+                                </button>
+                                </td>
+                                <td>
+                                <ul class="usa-button-group usa-button-group--segmented">
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline" disabled="disabled">
+                                            <i class="fa fa-check"></i>
+                                        </button>
+                                    </li>
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline" disabled="disabled">
+                                            <i class="fa fa-pencil"></i>
+                                        </button>
+                                    </li>
+                                    <li class="usa-button-group__item">
+                                        <button type="button" class="usa-button usa-button--outline" disabled="disabled">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </li>
+                                </ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid-row grid-gap">
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                        <div class="usa" style="background-color: white;">
+                           Casual Leaves &nbsp;&nbsp; 10<br>
+                           Sick Leaves &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10<br>
+                           Others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 
+                        </div>
+                    </div>
+                    <div class="tablet:grid-col-4  margin-bottom-4 tablet:margin-bottom-0">
+                        <div class="usa" style="background-color: white;">
+                            Casual Leaves &nbsp;&nbsp; 8<br>
+                            Sick Leaves &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>
+                            Others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

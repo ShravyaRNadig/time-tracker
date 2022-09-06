@@ -1,0 +1,14 @@
+.main-body-outer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 100%;
+}
+
+.main-sidenav-outer {
+    flex: 0 100px;     
+}
+
+.main-outlet {  
+    flex: 0 calc(100% - 120px);
+}

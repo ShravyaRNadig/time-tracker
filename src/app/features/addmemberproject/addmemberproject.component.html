@@ -1,0 +1,50 @@
+<ul class="usa-card-group">
+    <li class="usa-card tablet:grid-col">
+        <div class="usa-card__container">
+            <div class="usa-card__header">
+                <h2 class="usa-card__heading">Add to Project
+                    <p style="float: right;"><i class="fa fa-close" [routerLink]="['/project']"
+                            routerLinkActive="router-link-active"></i></p>
+                </h2>
+            </div>
+            <div class="usa-card__body">
+                <section aria-label="Search component">
+                    <form class="usa-search usa-search--small" role="search" style="padding-left: 455px;">
+                        <label class="usa-sr-only" for="search-field">Search</label>
+                        <input class="usa-input" id="search-field" type="search" name="search" />
+                        <button class="usa-button" type="submit">
+                            <img src="/assets/img/usa-icons-bg/search--white.png" class="usa-search__submit-icon"
+                                alt="Search" />
+                        </button>
+                    </form>
+                </section>
+                <fieldset class="usa-fieldset" style="padding-left: 555px;">
+                    <div class="usa-checkbox">
+                        <input class="usa-checkbox__input" id="check-historical-truth" type="checkbox"
+                            name="ab-lorem-ipsum" value="project-manager" checked="checked" />
+                        <label class="usa-checkbox__label" for="check-historical-truth">Ab Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Manager</label>
+                    </div>
+                    <div class="usa-checkbox">
+                        <input class="usa-checkbox__input" id="check-historical-douglass" type="checkbox"
+                        name="ab-lorem-ipsum" value="java-programmer" />
+                        <label class="usa-checkbox__label" for="check-historical-douglass">Ab Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java Programmer</label>
+                    </div>
+                    <div class="usa-checkbox">
+                        <input class="usa-checkbox__input" id="check-historical-washington" type="checkbox"
+                        name="ab-lorem-ipsum" value="project-managers" />
+                        <label class="usa-checkbox__label" for="check-historical-washington">Ab Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Manager</label>
+                    </div>
+                    <div class="usa-checkbox">
+                        <input class="usa-checkbox__input" id="check-historical-washington1" type="checkbox"
+                        name="ab-lorem-ipsum" value="project-manager" />
+                        <label class="usa-checkbox__label" for="check-historical-washington1">Ab Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Manager</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="usa-card__footer" style="padding-left: 695px;">
+                <button type="button" class="usa-button" [routerLink]="['/project']"
+                    routerLinkActive="router-link-active" >Add</button>
+            </div>
+        </div>
+    </li>
+</ul>

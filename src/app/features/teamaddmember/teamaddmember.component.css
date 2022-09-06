@@ -1,0 +1,6 @@
+#grad1 {
+    height: 50px;
+    background-image: linear-gradient(rgb(206, 206, 202) 50%, rgb(112, 112, 114) 50%);
+    border-radius: 50%;
+    width: 50px;
+  }

@@ -1,0 +1,46 @@
+<div class="grid-row grid-gap">
+    <div class="tablet:grid-col  margin-bottom-4 tablet:margin-bottom-0">
+        <ul class="usa-card-group">
+            <li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-right">
+                <div class="usa-card__container">
+                    <div class="usa-card__header">
+                        <i class="fa fa-arrow-left" [routerLink]="['/team']" routerLinkActive="router-link-active" ></i>
+                        <h2 class="usa-card__heading">Adding New Member <button type="button" class="usa-button"
+                                style="float: right" [routerLink]="['/team']"
+                                routerLinkActive="router-link-active">Save</button></h2>
+                    </div>
+                    <div class="usa-card__media usa-card__media--inset">
+                        <div class="usa-card__img">
+                            <img src="/assets/img/usa-icons-bg/amico.png" alt="A placeholder image" />
+                        </div>
+                    </div>
+                    <div class="usa-card__body">
+                        <br>
+                        <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col-1">
+                                <div id="grad1"></div>
+                            </div>
+                            <div class="tablet:grid-col-4">
+                                <button type="button" class="usa-button">Upload Photo</button>
+                            </div>
+                        </div>
+                        <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col-6">
+                                <input class="usa-input" id="input-type-text" name="input-type-text"
+                                    placeholder="Full Name" />
+                                <input class="usa-input" id="input-type-text" name="input-type-text"
+                                    placeholder="Designation" />
+                            </div>
+                            <div class="tablet:grid-col-6">
+                                <input class="usa-input" id="input-type-text" name="input-type-text"
+                                    placeholder="Email Id">
+                                <input class="usa-input" id="input-type-text" name="input-type-text"
+                                    placeholder="Default Password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
