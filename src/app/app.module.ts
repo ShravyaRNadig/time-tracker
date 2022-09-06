@@ -24,6 +24,8 @@ import { TimesheetDaywiseComponent } from './features/timesheet-daywise/timeshee
 import { TimesheetMonthwiseComponent } from './features/timesheet-monthwise/timesheet-monthwise.component';
 import { TimesheetWeekwiseComponent } from './features/timesheet-weekwise/timesheet-weekwise.component';
 import { TimesheetYearwiseComponent } from './features/timesheet-yearwise/timesheet-yearwise.component';
+import { AttendanceMonthComponent } from './features/attendance-month/attendance-month.component';
+import { AttendanceYearComponent } from './features/attendance-year/attendance-year.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { TimesheetYearwiseComponent } from './features/timesheet-yearwise/timesh
     TimesheetMonthwiseComponent,
     TimesheetWeekwiseComponent,
     TimesheetYearwiseComponent,
+    AttendanceMonthComponent,
+    AttendanceYearComponent,
   ],
   imports: [
     BrowserModule,

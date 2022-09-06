@@ -19,6 +19,8 @@ import { TimesheetDaywiseComponent } from './features/timesheet-daywise/timeshee
 import { TimesheetWeekwiseComponent } from './features/timesheet-weekwise/timesheet-weekwise.component';
 import { TimesheetMonthwiseComponent } from './features/timesheet-monthwise/timesheet-monthwise.component';
 import { TimesheetYearwiseComponent } from './features/timesheet-yearwise/timesheet-yearwise.component';
+import { AttendanceMonthComponent } from './features/attendance-month/attendance-month.component';
+import { AttendanceYearComponent } from './features/attendance-year/attendance-year.component';
 
 const routes: Routes = [
   {
@@ -101,6 +103,14 @@ const routes: Routes = [
       {
         path:'attendance',
         component:AttendanceComponent
+      },
+      {
+        path:'months',
+        component:AttendanceMonthComponent
+      },
+      {
+        path:'years',
+        component:AttendanceYearComponent
       }
     ]
   },
